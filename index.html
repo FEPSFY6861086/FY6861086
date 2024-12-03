@@ -196,18 +196,23 @@ document.getElementByld("date&time").innerHTML = d;
 <body>
  <button id="colorButton">Click me to change colour</button>
  <script>
-  //Get a reference tothe button element 
+  // Get a reference tothe button element 
   var button = document.getElementByld("colorButton");
 
-  //function to change the button color 
+  // function to change the button color 
   function changeColor(){
-   //Generate a random color (hexadecimal)
+   // Generate a random color (hexadecimal)
    var randomColor = "#" + Math.floor(Math.random()*16777215).toString(16);
 
-   //Set the button's background color to the random color
+   // Set the button's background color to the random color
    button.style.backgroundColor = randomColor;
   }
-  //Add a click event listener to the button
+  // Add a click event listener to the button
+
+
+
+
+  
   button.addEventListener("click", changeColor);
  </script>
 </body> 
