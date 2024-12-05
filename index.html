@@ -95,8 +95,9 @@ mimicking nature leads to more efficient and sustainable aviation technologies.
                                
   
   <h3 id="Analysis and discussion">Analysis and discussion</h3> 
-   <p>
-   <pre>
+  
+   <pre id="Analysis_InText" class="ex1" >
+     <p>
 <b><ins>Influence of Peregrine Falcon</ins></b> 
 The design of the B-2 Spirit stealth bomber has been significantly influenced by the peregrine falcon, particularly in aerodynamics and stealth capabilities.
 The peregrine Falcon is known for its sleek, aerodynamic shape, allowing it to dive at speeds close to 200 mph. Its streamlined body reduces air resistance, 
@@ -265,9 +266,10 @@ advanced aviation technologies.
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
+   const AnalysisCount = displayWordCount("Analysis_InText");
   
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount;
+    const totalWordCount = IntroductionCount + AnalysisCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
