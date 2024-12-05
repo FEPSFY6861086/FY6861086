@@ -85,14 +85,13 @@ and effective but also sustainable and harmonious with the environment.
 </p>
 
  <h3 id="Introduction">Introduction</h3>
- <p class="ex1">
-  <pre>
+ 
+  <pre id="Introduction_InText" class="ex1">
 Nature has inspired many advancements in aerospace engineering. By observing and studying birds like the Peregrine Falcon and eagles, engineers
 have developed technologies that enhance modern aircraft. This article explores how these natural principles have influenced the design of stealth
 bombers, fuel-saving winglets, adaptive wing morphing technologies, and JetZero Inc.'s innovative low-carbon aircraft. These examples show how 
 mimicking nature leads to more efficient and sustainable aviation technologies.
   </pre>
-</p>
                                
   
   <h3 id="Analysis and discussion">Analysis and discussion</h3> 
@@ -265,10 +264,10 @@ advanced aviation technologies.
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction");
-    const AnalysisCount = displayWordCount("Analysis and discussion");
+    const IntroductionCount = displayWordCount("Introduction_InText");
+  
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + Analysis and discussionCount;
+    const totalWordCount = IntroductionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
